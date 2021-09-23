@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .box1{
+      margin: 50px auto;
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      /*transform: rotateX(10deg);*/
+      transform-style: preserve-3d;
+      perspective: 1000px;
+    }
+    .box1:hover{
+      transform: translate(-40%,0) rotateY(30deg) scale(.8);
+      transition: 2s ;
+
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+</body>
+</html>
